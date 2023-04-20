@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Shape Calculator</title>
+  <link href="style2.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ece4cd7208.js" crossorigin="anonymous"></script>
+
+<body>
+<div class="header">
+  <h1>Shape calculator!</h1>
+</div>
+
+  <div class="wrap">
+    <div class="score-wrap ">
+        <div class="score-in back-shadow" class="input"> <p id="score"></p> <!--display slot--></div>
+    </div>
+
+
+    <div class="slot1"> <!--slot1-->
+      <button class="gw button-pink back-shadow" onclick="butt(0)">Triangle</button>
+      <button class="gw button-pink back-shadow" onclick="butt(1)">Paralleogram</button>
+      <button class="gw button-pink back-shadow" onclick="butt(2)">N-gon</button>
+      <button class="gw button-pink back-shadow" onclick="butt(3)">Circle</button>
+    </div>
+
+
+
+    <div class="slot2"> <!--slot2-->
+
+      <div class="area back-shadow move-right dis-non"> <!--area or circuit-->
+        
+          <div onclick="sliderFunction('area')" id="s-left" class="shon">Area</div>
+          <div onclick="sliderFunction('circuit')" id="s-right" class="shon">Circuit</div>
+          
+        
+      </div>
+        <div class="buttonWrap back-shadow move-right dis-non">
+          <div class="display2"></div>
+          <button onclick="setFocus(0)" class="buttor pickWay"></button>
+        </div>
+        <div class="buttonWrap back-shadow move-right dis-non">
+          <div class="display2"></div>
+          <button onclick="setFocus(1)" class="buttor pickWay"></button>
+        </div>
+        <div class="buttonWrap back-shadow move-right dis-non">
+          <div class="display2"></div>
+          <button onclick="setFocus(2)" class="buttor pickWay"></button>
+        </div>
+    
+        
+        
+      
+    </div>
+
+      
+      <div class="numbers dis-non move-right"> <!--numbers-->
+        <div class="room back-shadow">
+          <button class="button-gray" onclick="numberFunction(1)">1</button>
+          <button class="button-gray" onclick="numberFunction(2)">2</button>
+          <button class="button-gray" onclick="numberFunction(3)">3</button>
+          <button class="button-gray" onclick="numberFunction(4)">4</button>
+          <button class="button-gray" onclick="numberFunction(5)">5</button>
+          <button class="button-gray" onclick="numberFunction(6)">6</button>
+        </div>
+        <div class="room back-shadow">
+        <button class="button-gray" onclick="numberFunction(7)">7</button>
+        <button class="button-gray" onclick="numberFunction(8)">8</button>
+        <button class="button-gray" onclick="numberFunction(9)">9</button>
+        <button class="button-gray" onclick="numberFunction(0)">0</button>
+        <button class="button-gray" onclick="numberFunction('D')">D</button> 
+        <button class="button-gray" onclick="numberFunction('C')">C</button>
+      </div>     
+       
+      </div>
+
+      <div class="slot3"><!--slot3-->
+        <div class="buttonWrap2 back-shadow move-right dis-non">
+          <div class="display3"></div>
+          <input onclick="findFocus()" class="displayInput" type="text">
+        </div>
+        <div class="buttonWrap2 back-shadow move-right dis-non">
+          <div class="display3"></div>
+          <input onclick="findFocus()" class="displayInput" type="text">
+        </div>
+        <div class="buttonWrap2 back-shadow move-right dis-non">
+          <div class="display3"></div>
+          <input onclick="findFocus()" class="displayInput" type="text">
+        </div>
+        <div class="buttonWrap2 back-shadow move-right dis-non">
+          <div class="display3"></div>
+          <input onclick="findFocus()" class="displayInput" type="text">
+        </div>
+        <div class="buttonWrap2 back-shadow move-right dis-non">
+          <div class="display3"></div>
+          <input onclick="findFocus()" class="displayInput" type="text">
+        </div>
+        <div class="buttonWrap2 back-shadow move-right dis-non">
+          <div class="display3"></div>
+          <input onclick="findFocus()" class="displayInput" type="text">
+        </div>
+
+
+        
+      </div>
+
+      <div class="calculate "> <!--calculate-->
+        <button class="button-black back-shadow" onclick="calculate()">Calculate</button>
+      </div>
+
+
+
+  </div> <!--wrap endend-->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
